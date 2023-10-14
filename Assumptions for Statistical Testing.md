@@ -1,15 +1,3 @@
----
-title: "Statistical Tests and Assumptions"
-author: "Anna Mariya Shibu"
-date: "`r format(Sys.time(), '%d %B, %Y')`"
-output: slidy_presentation
-footer: "Copyright (c) 2018, saintgits"
-css: custom.css
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = T)
-```
 
 ## 
 
@@ -102,57 +90,3 @@ set.seed(1234)
 dplyr::sample_n(my_data, 10)
 
 ```
-
- For large sample these pretests are laxuaries.However, to be consistent, normality can be checked by visual inspection [normal plots (histogram), Q-Q plot (quantile-quantile plot)] or by significance tests].
-
-
-## Normality test
-
-*Approach*:  Use a significance test comparing the sample distribution to a normal one in order to ascertain whether data show or not a serious deviation from normality.
-
-There are several methods for normality test such as Kolmogorov-Smirnov (K-S) normality test and Shapiro-Wilk's test. The null hypothesis of these tests is that "sample distribution is normal". If the test is significant, the distribution is non-normal.
-
-```{r}
-shapiro.test(my_data$len)
-```
-
-**Info**: From the output, the p-value > 0.05 implying that the distribution of the data are not significantly different from normal distribution. In other words, we can assume the normality.
-
-
-##Visual methods
-Density plot and Q-Q plot can be used to check normality visually.
-
-### Density Plot
-
-```{r}
-library("ggpubr")
-ggdensity(my_data$len, 
-          main = "Density plot of tooth length",
-          xlab = "Tooth length")
-```
-
-## Q-Q Plot
-
-```{r}
-ggqqplot(my_data$len)
-```
-
-## qqPlot()
-
-It's also possible to use the function qqPlot() [in car package]:
-
-```{r}
-library("car")
-qqPlot(my_data$len)
-```
-
-
-## Takeaway from the session
-
--Always form good research questions and hypothesis for analysis.
-
-- In case of parametric tests, always make sure that the group of data to be analyzed follows normal distribution.
-
-- If normality can not be maintained, then try non- parametric tests.
-
-- Always use large samples for statistical analysis.
