@@ -10,6 +10,7 @@ sum	of	all	the	values	divided	by	the	number	of	values.
 
 $$\bar{x}=\frac{\sum\limits_{i=1}^n x_i}{n}$$
 
+
 ***Trimmed mean ***
 
 A	variation	of	the	mean	is	a	*trimmed	mean*,	which	you	calculate	by	dropping	a
