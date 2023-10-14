@@ -38,7 +38,7 @@ median(states$Population)
 ```
 
 
-#Correlation and Regression
+# Correlation and Regression
 
 - Correlation determines if one variable varies systematically as another variable changes.
 
