@@ -17,7 +17,7 @@ A	variation	of	the	mean	is	a	*trimmed	mean*,	which	you	calculate	by	dropping	a
 fixed	number	of	sorted	values	at	each	end	and	then	taking	an	average	of	the
 remaining	values.
 
-# Example
+## Example
 ```{r,results='asis'}
 library(knitr)
 state=c('Kerala','Tamilnadu','Karnataka','Andra', 'Thelungana','Bihar','Bengal')
