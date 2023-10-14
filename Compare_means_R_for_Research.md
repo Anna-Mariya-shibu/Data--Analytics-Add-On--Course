@@ -13,7 +13,7 @@ Statistical tests to use for comparing means.
 - Kruskal-Wallis test
 
 
-## One-Sample T-test in R
+# One-Sample T-test in R
 
 one-sample t-test is used to compare the mean of one sample ($\mu$) to a known standard (or theoretical/hypothetical) mean ($\mu_0$).
 
