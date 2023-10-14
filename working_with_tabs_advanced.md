@@ -1,5 +1,3 @@
-
-
 ## Comparing Diamond Prices by Carat Across Different Cut Qualities {.tabset} 
 
 ```{r, results='asis'}
