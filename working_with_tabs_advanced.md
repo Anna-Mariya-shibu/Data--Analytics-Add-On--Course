@@ -1,19 +1,4 @@
----
-title: "Working with tabs (Advanced Method)"
-author: "Anna Mariya Shibu"
-date: "`r Sys.Date()`"
-output: html_document
----
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE,message = FALSE,warning = FALSE)
-```
-
-```{r, echo=FALSE}
-library(ggplot2)
-library(plotly)
-library(dplyr)
-```
 
 ## Comparing Diamond Prices by Carat Across Different Cut Qualities {.tabset} 
 
