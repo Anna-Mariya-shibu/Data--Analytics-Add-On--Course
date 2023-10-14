@@ -28,7 +28,7 @@ kable(states)
 
 
 
-#Finding basic statistics
+# Finding basic statistics
 
 ```{r}
 summary(states)
@@ -183,7 +183,7 @@ Data$Instructor = factor(Data$Instructor,
 
 library(psych)
 
-headTail(Data)
+#headTail(Data)
 
 str(Data)
 
