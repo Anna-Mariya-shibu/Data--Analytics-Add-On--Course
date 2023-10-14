@@ -5,7 +5,7 @@
 ## Sentiment Analysis
 
 ```{r}
-dfq=read.csv('Sentiment.csv',header = TRUE)
+dfq=read.csv('sentiment.csv',header = TRUE)
 ```
 
 ```{r}
